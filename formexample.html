@@ -163,7 +163,10 @@
   </form><br />
   <script type="text/javascript">
   function junction() {
-    alert("Dark mode");
+    if (ele.classList.toggle("dark"){
+        alert("Dark mode");}
+    else {
+          alert("Light mode");}
     var ele = document.body;
     ele.classList.toggle("dark");
   }
